@@ -9,7 +9,6 @@ import asyncio
 
 import os
 import time
-import requests
 from pyrogram import filters
 import random
 from pyrogram import Client
