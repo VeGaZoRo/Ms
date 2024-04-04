@@ -7,7 +7,7 @@ from StringGen import LOGGER, Anony
 from StringGen.modules import ALL_MODULES
 
 
-async def anony_boot():
+async def anony_bot():
     try:
         await Anony.start()
     except Exception as ex:
@@ -22,5 +22,5 @@ async def anony_boot():
 
 
 if __name__ == "__main__":
-    asyncio.get_event_loop().run_until_complete(anony_boot())
+    asyncio.get_event_loop().run_until_complete(anony_bot())
     LOGGER.info("تم ايقاف بوت جلسات عزيزي..!!")
