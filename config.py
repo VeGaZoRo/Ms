@@ -12,4 +12,4 @@ BOT_TOKEN = getenv("BOT_TOKEN","6733899123:AAGSF2E0-_kMHbCwOCc5gJ7BH06vdIkKehg")
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://mohamedhelal:mohamedhelal@cluster0.qhhuj2p.mongodb.net/?retryWrites=true&w=majority")
 
 OWNER_ID = int(getenv("OWNER_ID", 6909581339))
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/VeGaSource")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/VeGaOne")
