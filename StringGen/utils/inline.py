@@ -10,8 +10,8 @@ keyboard = InlineKeyboardMarkup(
     [
         [InlineKeyboardButton(text="ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ", callback_data="gensession")],
         [
-            InlineKeyboardButton(text="ᴢҽꝛօ", url=f"https://t.me/VeGaZeRo"),
-            InlineKeyboardButton(text="ᴢօꝛօ", url="https://t.me/VeGaZoRo"),
+            InlineKeyboardButton(text="ᴢҽꝛօ", url=f"https://t.me/TopVeGa"),
+            InlineKeyboardButton(text="ᴢօꝛօ", url="https://t.me/ToxVeGa"),
         ],
         [InlineKeyboardButton(text="ᴠᴇɢᴧ", url="https://t.me/VeGaOne")],
     ]
