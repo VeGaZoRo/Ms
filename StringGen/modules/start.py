@@ -82,7 +82,7 @@ if not ownerID in botdb.get("db"+token.split(":")[0])["admins"]:
    data["admins"].append(ownerID)
    botdb.set("db"+token.split(":")[0], data)
 
-@bot.on_message(filters.command("start") & filters.private)
+@Anony.on_message(filters.command("start") & filters.private)
 async def on_start(c,m):
    getDB = botdb.get("db"+token.split(":")[0])
    if m.from_user.id in getDB["banned"]:
@@ -106,7 +106,7 @@ async def on_start(c,m):
    botdb.set(f"USER:{m.from_user.id}",data)
 
 
-@bot.on_message(filters.private & ~filters.service)
+@Anony.on_message(filters.private & ~filters.service)
 async def on_messages(c,m):       
    if botdb.get(f"broad:{m.from_user.id}") and (m.from_user.id == ownerID or m.from_user.id in botdb.get("db"+token.split(":")[0])["admins"]):
       botdb.delete(f"broad:{m.from_user.id}")
@@ -273,7 +273,7 @@ async def on_messages(c,m):
           botdb.set("db"+token.split(":")[0],data)
           return await m.reply(text,quote=True)
 
-@bot.on_callback_query()
+@Anony.on_callback_query()
 async def on_Callback(c,m):      
    if m.data == "broadcast" and (m.from_user.id == ownerID or m.from_user.id in botdb.get("db"+token.split(":")[0])["admins"]):
       await m.edit_message_text("• أرسل الإذاعة الآن ( صورة ، نص ، ملصق ، ملف ، صوت )\n• للإلغاء ارسل الغاء ",reply_markup=InlineKeyboardMarkup ([[InlineKeyboardButton ("رجوع",callback_data="back")]]))
