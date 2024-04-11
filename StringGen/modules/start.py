@@ -27,24 +27,7 @@ async def f_start(_, message: Message):
     
     
 ownerID = int("6753126490") #ايدي الادمن 
-api_hash = Config.API_HASH #ايبي هاش 
-api_id = Config.APP_ID #ايبي ايدي
-token = Config.TG_BOT_TOKEN #البوت
 
-
-bot = Client(
-  'bot'+token.split(":")[0],
-  19525325, #ايبي ايدي
- 'ddc123dd015945669f20498bd0a50409', #ايبي هاش
-  bot_token=token, in_memory=True
-)
-app = Client(
-  name="session",
-  api_id=api_id, api_hash=api_hash,
-  bot_token=token, in_memory=True
-)
-#bot = app
-#app = bot
 
 STARTKEY = InlineKeyboardMarkup(
        [
