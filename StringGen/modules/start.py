@@ -6,7 +6,7 @@ from StringGen import Anony
 from pyrogram import Client
 from StringGen.utils import add_served_user, keyboard
 import asyncio
-
+botdb = DB('botdb.sqlite')
 import os
 import time
 from pyrogram import filters
