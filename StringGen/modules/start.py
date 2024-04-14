@@ -2,6 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 from pyrogram.types import (InlineKeyboardButton,CallbackQuery,InlineKeyboardMarkup, Message)
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup
+from kvsqlite.sync import Client as DB
 from StringGen import Anony
 from pyrogram import Client
 from StringGen.utils import add_served_user, keyboard
